@@ -8,6 +8,8 @@
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
@@ -15,7 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch:css": "postcss src/assets/css/tailwind.css -o src/assets/css/app.main.min.css"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +37,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.2",
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
   }
 }
